@@ -1,0 +1,41 @@
+#question & answer
+
+print("Responde a las preguntas con Si o No")
+
+
+correcto = 'Correcto'
+incorrecto = 'Incorrecto'
+
+puntaje = 0
+
+#Pregunta 1
+
+pregunta1 = str(input(f"¿CO2 es dióxido de carbono? Si o No \r\n"))
+
+if pregunta1 == str('si' or 'SI' or 'Si'):
+    puntaje = puntaje + 1
+    print(f'{correcto}')
+else:
+    print(f'{incorrecto}, el CO2 es dióxido de carbono!')
+
+#Pregunta2
+
+pregunta2 = str(input(f"¿La capital de Corea del Norte es Seúl? Si o No \r\n"))
+
+if pregunta2 == str('no' or 'No' or 'NO'):
+    puntaje = puntaje + 1
+    print(f'{correcto}')
+else:
+    print(f'{incorrecto}, la capital de Seúl es de Corea del Sur')
+
+#Pregunta3
+
+pregunta3 = str(input(f"¿El koala es un oso? Si o No \r\n")) 
+
+if pregunta3 == str('no' or 'No' or 'NO'):
+    puntaje = puntaje + 1
+    print(f'{correcto}')
+else:
+    print(f'{incorrecto}, les llama oso koala pero no son osos en lo absoluto, los koalas pertenecen a la clasificación comúnmente conocidos como wombats.')
+
+print(f'Felicidades tu puntaje fue de {puntaje} puntos!\r\n')
